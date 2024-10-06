@@ -28,7 +28,7 @@ const Login = () => {
             <p className='mb-10 text-gray-500 md:text-base text-[13px] text-center'>Ayo login dulu sebelum mulai quiznya</p>
             <img src={imgOren} alt="" className='w-[30%] absolute left-0 md:-bottom-20 -bottom-4 md:block hidden' />
             <img src={imgDouble} alt="" className='w-[30%] absolute right-0 md:-bottom-20 bottom-5 md:block hidden' />
-            <div className='flex items-center flex-col'>
+            <div className='flex items-center flex-col pl-[100px] pr-[100px]'>
                 <Input
                     type="text"
                     placeholder="Username"
