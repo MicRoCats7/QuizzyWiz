@@ -54,9 +54,8 @@ const Quiz = () => {
         setScore(newScore);
 
         if (currentQuestion + 1 >= questions.length) {
-            // Use a timeout to ensure state update before navigating
             setTimeout(() => {
-                handleQuizEnd(newScore); // Pass newScore to ensure it is updated in result
+                handleQuizEnd(newScore);
             }, 0);
         } else {
             setCurrentQuestion(currentQuestion + 1);
