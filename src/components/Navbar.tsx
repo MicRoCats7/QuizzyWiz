@@ -4,7 +4,8 @@ import {
     PopoverTrigger,
 } from "@/components/ui/popover"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
-import logoProfile from "/public/assets/foto-profile.png";
+import profile from "/public/assets/foto-profile.png";
+import logo from "/public/assets/logo-answerly.png";
 
 function Navbar() {
     const getUsername = localStorage.getItem('username');
@@ -12,17 +13,18 @@ function Navbar() {
     const handleLogout = () => {
         localStorage.removeItem('username');
         localStorage.removeItem('email');
+        localStorage.removeItem('quizScore');
         window.location.href = '/';
     }
 
     return (
         <div className="flex items-center justify-between md:wrapper wrapper-mobile pt-5">
-            <img src="/src/assets/logo-answerly.png" alt="" className="md:w-60 w-40" />
+            <img src={logo} alt="" className="md:w-60 w-40" />
             <Popover>
                 <PopoverTrigger>
                     <div className="flex items-center gap-3 border border-[#e48449] rounded-full px-5">
                         <Avatar className="h-14">
-                            <AvatarImage src={logoProfile} />
+                            <AvatarImage src={profile} />
                             <AvatarFallback>AV</AvatarFallback>
                         </Avatar>
                         <h1>{getUsername}</h1>
