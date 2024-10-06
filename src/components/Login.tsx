@@ -35,7 +35,7 @@ const Login = () => {
                     value={username}
                     onChange={(e) => setUsername(e.target.value)}
                     onKeyDown={handleEnter}
-                    className='px-5 py-7 mb-5 bg-transparent border border-[#e48449] rounded-xl md:w-[500px] w-[400px] text-base'
+                    className='px-5 py-7 mb-5 bg-transparent border border-[#e48449] rounded-xl md:w-[500px] w-[350px] text-base'
                 />
                 <Input
                     type="email"
@@ -43,7 +43,7 @@ const Login = () => {
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     onKeyDown={handleEnter}
-                    className='px-5 py-7 mb-5 bg-transparent border border-[#e48449] rounded-xl md:w-[500px] w-[400px] text-base'
+                    className='px-5 py-7 mb-5 bg-transparent border border-[#e48449] rounded-xl md:w-[500px] w-[350px] text-base'
                 />
                 <button
                     onClick={handleLogin}
