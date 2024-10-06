@@ -21,7 +21,7 @@ function Navbar() {
                 <PopoverTrigger>
                     <div className="flex items-center gap-3 border border-[#e48449] rounded-full px-5">
                         <Avatar className="h-14">
-                            <AvatarImage src="/src/assets/foto-profile.png" />
+                            <AvatarImage src="/public/assets/foto-profile.png" />
                             <AvatarFallback>AV</AvatarFallback>
                         </Avatar>
                         <h1>{getUsername}</h1>
