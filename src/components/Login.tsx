@@ -23,7 +23,7 @@ const Login = () => {
     }
 
     return (
-        <div className='wrapper flex flex-col items-center md:h-screen h-full justify-center relative md:overflow-y-hidden overflow-hidden'>
+        <div className='md:wrapper wrapper-mobile flex flex-col items-center h-screen justify-center relative md:overflow-y-hidden overflow-hidden'>
             <h1 className='text-center text-[#e48449] text-[70px] font-bold font-luckiest'>Login</h1>
             <p className='mb-10 text-gray-500 md:text-base text-[13px] text-center'>Ayo login dulu sebelum mulai quiznya</p>
             <img src={imgOren} alt="" className='w-[30%] absolute left-0 md:-bottom-20 -bottom-4 md:block hidden' />
