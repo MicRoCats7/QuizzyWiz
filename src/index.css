@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Luckiest+Guy&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #FCFAEE;
+  font-family: "Balsamiq Sans", sans-serif;
+}
+
+.wrapper {
+  padding-left: 100px;
+  padding-right: 100px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.wrapper-mobile {
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.font-luckiest {
+  font-family: "Luckiest Guy", cursive;
+}
+
+.font-balsamiq {
+  font-family: "Balsamiq Sans", sans-serif;
+}
+
+.text-outline {
+  -webkit-text-stroke: 2px #e48449;
+}
