@@ -4,6 +4,7 @@ import {
     PopoverTrigger,
 } from "@/components/ui/popover"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
+import logoProfile from "/public/assets/foto-profile.png";
 
 function Navbar() {
     const getUsername = localStorage.getItem('username');
@@ -21,7 +22,7 @@ function Navbar() {
                 <PopoverTrigger>
                     <div className="flex items-center gap-3 border border-[#e48449] rounded-full px-5">
                         <Avatar className="h-14">
-                            <AvatarImage src="/public/assets/foto-profile.png" />
+                            <AvatarImage src={logoProfile} />
                             <AvatarFallback>AV</AvatarFallback>
                         </Avatar>
                         <h1>{getUsername}</h1>

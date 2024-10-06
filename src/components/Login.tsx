@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import { Input } from './ui/input';
 import { useNavigate } from 'react-router-dom';
+import imgOren from "/public/assets/login/oren.png";
+import imgDouble from "/public/assets/login/double.png";
 
 const Login = () => {
     const [username, setUsername] = useState('');
@@ -18,8 +20,8 @@ const Login = () => {
         <div className='wrapper flex flex-col items-center justify-center h-screen relative overflow-y-hidden'>
             <h1 className='text-center text-[#e48449] text-[70px] font-bold font-luckiest'>Login</h1>
             <p className='mb-10 text-gray-500 md:text-base text-[13px] text-center'>Ayo login dulu sebelum mulai quiznya</p>
-            <img src="/public/assets/login/oren.png" alt="" className='w-[30%] absolute left-0 md:-bottom-20 bottom-4' />
-            <img src="/public/assets/login/double.png" alt="" className='w-[30%] absolute right-0 md:-bottom-20 bottom-5' />
+            <img src={imgOren} alt="" className='w-[30%] absolute left-0 md:-bottom-20 bottom-4' />
+            <img src={imgDouble} alt="" className='w-[30%] absolute right-0 md:-bottom-20 bottom-5' />
             <div className='flex items-center flex-col'>
                 <Input
                     type="text"
