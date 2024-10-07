@@ -12,7 +12,13 @@ const Result = () => {
             <div className="md:wrapper wrapper-mobile flex flex-col items-center justify-center pt-20">
                 <h1 className='text-center font-luckiest text-[40px] text-white text-outline'>Hasil Kuis</h1>
                 <p className="text-center md:text-base text-sm">Selamat <span className="bg-[#fbb116]">{username}</span> kamu sudah menyelesaikan kuis di answerly</p>
-                <span className={`font-luckiest text-[80px] ${totalScore <= 40 ? 'text-red-500' : totalScore <= 79 ? 'text-yellow-500' : 'text-green-500'}`}>
+                <span
+                    className={`
+                        font-luckiest text-[80px] ${totalScore <= 40 ? 'text-red-500' :
+                            totalScore <= 79 ? 'text-yellow-500'
+                                : 'text-green-500'}`
+                    }
+                >
                     {totalScore}
                 </span>
                 <div className="w-full flex flex-col items-center justify-center">

@@ -75,7 +75,7 @@ const Quiz = () => {
             <div className='flex flex-col md:wrapper wrapper-mobile pt-10'>
                 <div className='flex items-center md:flex-row flex-col justify-between md:gap-0 gap-5'>
                     <h1 className='font-luckiest md:text-[40px] text-[30px] text-white text-outline text-center'>Kuis untuk kamu {username}</h1>
-                    <div className='flex items-center gap-5'>
+                    <div className='flex items-center md:gap-5 gap-28'>
                         <span className='text-end font-luckiest text-3xl text-outline text-white'>
                             {currentQuestion + 1}/{questions.length}
                         </span>
