@@ -5,7 +5,7 @@ import {
 } from "@/components/ui/popover"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import profile from "/public/assets/foto-profile.png";
-import logo from "/public/assets/logo-answerly.png";
+import logo from "/public/assets/QuizzyWiz.png";
 
 function Navbar() {
     const getUsername = localStorage.getItem('username');
@@ -19,7 +19,7 @@ function Navbar() {
 
     return (
         <div className="flex items-center justify-between md:wrapper wrapper-mobile pt-5">
-            <img src={logo} alt="" className="md:w-60 w-40" />
+            <img src={logo} alt="" className="md:w-32 w-24" />
             <Popover>
                 <PopoverTrigger>
                     <div className="flex items-center gap-3 border border-[#e48449] rounded-full px-5">
